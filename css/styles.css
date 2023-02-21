@@ -1,8 +1,6 @@
 body{
-    margin: 0px;
     background-color: hsl(225, 100%, 94%);
-    display: inline;
-    justify-content: center;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,10 +8,9 @@ body{
 
 .background{
     width: 100%;
-    margin: 0px;
-    position: relative;
-    text-align: center;
+    position: absolute;
     justify-content: center;
+    top: 0px;
 }
 .content{
     max-height: 36.25rem;
@@ -22,13 +19,11 @@ body{
     position: absolute;
     justify-content: center;
     background-color: white;
-    top: 88px;
-    left: 504px;
     height: 100%;
     text-align: center;
     font-family: 'Red Hat Display', sans-serif;
-    margin: auto;
     border-radius: 16px;
+    z-index: 9999;
 }
 .mid-text{
     background-color: hsl(225, 100%, 98%);
@@ -73,14 +68,19 @@ body{
     margin-right: 28px;
     opacity: 1;
     color: #9B9EB1;
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 .annualplan{
     font-size: 15px;
     font-family: 'Red Hat Display', sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 4px;
     margin-top: 16px;
     padding-top: 12px;
+    color:hsl(223, 47%, 23%)
 }
 .price{
     margin-top: 6px;
@@ -89,6 +89,7 @@ body{
 .summary{
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 800;
+    color:hsl(223, 47%, 23%)
 }
 .btn {
     -webkit-border-radius: 8;
@@ -117,7 +118,7 @@ body{
     font-family: 'Red Hat Display', sans-serif;
     color:#9B9EB1;
     text-decoration: none;
-    
+    font-weight: 600;
   }
   .cancel:hover{
     color:black
