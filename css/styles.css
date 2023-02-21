@@ -11,6 +11,7 @@ body{
     position: absolute;
     justify-content: center;
     top: 0px;
+    height: 50%;
 }
 .content{
     max-height: 36.25rem;
